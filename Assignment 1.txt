@@ -1,0 +1,134 @@
+A1)Python as General purpose Lang : As Python can be used for variety of purposes like Web application , data analysis etc.
+Python as HLL : As this is version of language which can't be understood directly by the computer but is understood by prgrammers to give instructions to the Hardware.
+Usually an interpretor or compiler is required to convert HLL to Low level lang i.e. in bits (0 & 1) . 
+
+
+A2)Python as dynamically typed language : As the variables are assigned a type at runtime rather than the programmers defining the type beforhand as in 
+case of C, C++, Java 
+
+A3)Pros : 
+a)Dynamically typed language 
+b)Supports a wide range of libraries like NumPy , Pandas, Matplotlib etc. which aid in data science , ML etc. 
+c)Easy to learn as we don't have to declare any type & is liberal with the syntax 
+d)Good Community support as being used by many developers
+e)Portable : As the code once written can run on any number of different platform 
+
+Cons: 
+a)Slower that other compiled languages  
+b)Multithreading feature not great beacuse of Global Interpretor Lock 
+c)Consumes a lot of space as dynamic lang
+d)Can have runtime errors as its a dynamically induced language following which the data type is automatically assigned which might not always be the case. 
+
+
+A4)Domains : 
+Data Analysis 
+Task Automation 
+Web Development 
+Scalable Applications 
+Machine Learning 
+IOT (as it can be embedded plus also usuage with Rasbary Pi etc.)
+
+A5)Variables : Name given to the memory allocation which will hold the data . 
+How to declare : variable_name = "XYZ"
+
+A6)Using Input function 
+eg. variable_name = input("Input the variable value here")
+
+A7)String 
+
+A8)Type casting is converting the data type from type to another for our programming requirements. 
+
+A9)We can't take more than one input using Input() in python. We have to use Split() for the multiple inputs. 
+
+A10)Keywords: Predefines & resrved words in Python which can't be used as identfiers, function name etc. Eg. ELIF ,AND , OR etc. 
+
+A11) Keywords can't be used as variable name as it is already predefined & may cause runtime error while executing the code as interpretor would find it difficult to predict the funtionality . 
+
+A12)Indentation is the fixed spacing used to mark the beginning of new block of code. 
+
+A13)print("This is the output")
+
+A14)Operators in Python : 
+Arithmetic operators
+Assignment operators
+Comparison operators
+Logical operators
+
+A15)/ -> Float division 
+// --> Integer Division 
+
+A16)
+var_name = 'iNeuron'
+print("```")
+print(var_name * 4)
+print("```")
+
+A17)
+num_var = int(input('Enter the number'))
+
+if(num_var%2 == 0):
+    print('The number is even')
+
+else : 
+    print('The number is odd')
+	
+	
+A18)Boolean operator : denotes TRUE or FALSE values 
+
+A19)
+1 or 0 -- 1
+
+0 and 0 --> 0
+
+True and False and True --> False
+
+1 or 0 or 0 --> 1 
+
+A20)Conditional statements : 
+It executes one block of code if the condition is true else other. Eg: if statement. if-else statement. if-elif-else ladder.
+
+A21)What is use of 'if', 'elif' and 'else' keywords?
+All three are used to denote conditional statements in Python.
+
+A22)Write a code to take the age of person as an input and if age >= 18 display "I can vote". If age is < 18 display "I can't vote".
+
+age = int(input('Enter the age :'))
+
+if(age > 18 ) :
+    print('I can vote')
+else:
+    print("I can't vote")
+	
+A23)
+numbers = [12, 75, 150, 180, 145, 525, 50]
+ 
+for i in range(len(numbers)): 
+    if(numbers[i]%2 == 0):
+        print(numbers[i] , ": The number is even") 
+    else:
+        print(numbers[i] ,": The number is odd") 
+		
+		
+A24)Write a code to take 3 numbers as an input from the user and display the greatest no as output.
+
+var1 = int(input('Enter the first number : '))
+var2 = int(input('Enter the second number : '))
+var3 = int(input('Enter the third number : '))
+
+if((var1 > var2) and (var1 > var3)):
+    print('The greatest number is : ' , var1)
+elif((var2>var1) and (var2>var3)):
+    print('The greatest number is : ' , var2)
+else : 
+    print(('The greatest number is : ', var3))
+	
+A25)
+numbers = [12, 75, 150, 180, 145, 525, 50]
+
+for i in range(len(numbers)): 
+    if((numbers[i]%5 == 0)and(numbers[i]<150)):
+        print(numbers[i])
+    elif(numbers[i]>150):
+        i = i + 1 
+    elif(numbers[i] > 500):
+        break
